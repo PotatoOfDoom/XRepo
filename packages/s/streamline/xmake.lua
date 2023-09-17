@@ -8,8 +8,6 @@ package("streamline")
     end
 
     on_install("windows", function (package)
-        Local configs = {}
-        
         os.cp("include", package:installdir())
         os.cp("lib/$(arch)/*.lib", package:installdir("lib"))
         os.cp("bin/$(arch)/*.dll", package:installdir("lib"))
