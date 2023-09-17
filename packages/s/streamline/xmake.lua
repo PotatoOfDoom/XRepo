@@ -1,4 +1,5 @@
 package("streamline")
+    set_kind("library", {headeronly = true})
     set_description("Streamline Integration Framework")
     set_license("MIT")
 
