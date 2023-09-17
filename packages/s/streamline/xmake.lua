@@ -15,6 +15,5 @@ package("streamline")
     end)
 
     on_test(function (package)
-        -- TODO check includes and interfaces
-        assert(package:has_cfuncs("slInit", {includes = "sl.h"}))
+        assert(package:has_cincludes("sl.h"))
     end)
